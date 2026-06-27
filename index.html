@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description"
+      content="Резюме фронтенд-разработчика Артема Корытова. Навыки: HTML, CSS, JavaScript, Git, Node.js, PostgreSQL." />
+   <link rel="stylesheet" href="/styles.css" />
+   <link rel="stylesheet" href="/adaptive.css" />
+   <title>Артем Корытов — Frontend-разработчик | Резюме</title>
+</head>
+
+<body>
+   <div class="video-bg">
+      <video class="video-bg__media" autoplay muted loop playsinline poster="/assets/video/BG_Video_poster.jpg">
+         <source src="/assets/video/BG_Video.mp4" type="video/mp4" />
+         Ваш браузер не поддерживает видео.
+      </video>
+      <div class="video-bg__overlay"></div>
+   </div>
+
+   <header class="header">
+      <nav class="header__nav" aria-label="Основная навигация">
+         <ul class="header__nav-list">
+            <li class="header__nav-item">
+               <a href="#about" class="header__nav-link">Обо мне</a>
+            </li>
+            <li class="header__nav-item">
+               <a href="#skills" class="header__nav-link">Навыки</a>
+            </li>
+            <li class="header__nav-item">
+               <a href="#projects" class="header__nav-link">Проекты</a>
+            </li>
+            <li class="header__nav-item">
+               <a href="#contact" class="header__nav-link">Контакты</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <main class="main">
+      <aside class="main__aside" aria-labelledby="aside-heading">
+         <h2 id="aside-heading" class="visually-hidden">Контактная информация</h2>
+         <img class="main__aside-photo" src="/assets/myPhoto4x3.png" alt="Фотография Артема Корытова" />
+         <div class="main__aside-info">
+            <ul class="main__aside-list">
+               <li class="main__aside-item">Город: Москва</li>
+               <li class="main__aside-item">Телефон: <a class="main__aside-link" href="tel:+79654442344">+7 (965)
+                     444-23-44</a></li>
+               <li class="main__aside-item">GitHub: <a class="main__aside-link" href="https://github.com/FunnyDevill"
+                     target="_blank" rel="noopener noreferrer">FunnyDevill</a></li>
+               <li class="main__aside-item">Навыки: HTML/CSS, JS, Git, Node.js, PostgreSQL</li>
+            </ul>
+         </div>
+      </aside>
+
+      <div class="main__content">
+         <section class="hero main__hero">
+            <h1 class="hero__title">Корытов Артем Альбертович</h1>
+            <p class="hero__subtitle">Frontend-разработчик</p>
+         </section>
+
+         <section id="about" class="about main__section">
+            <h2 class="about__title section-title">Обо мне</h2>
+            <p class="about__text">
+               Фронтенд-разработчик, ориентированный на написание чистого, поддерживаемого кода и создание удобных
+               интерфейсов.
+               Основной стек: семантический HTML5, современный CSS3 и JavaScript. Верстаю адаптивные кроссбраузерные
+               страницы,
+               уделяя внимание доступности и производительности. В повседневной работе использую Git и GitHub для
+               контроля версий
+               и командного взаимодействия, а Docker — для контейнеризации рабочих окружений. Имею опыт работы с
+               PostgreSQL:
+               написание запросов, интеграция фронтенда с базой данных, что помогает понимать полный цикл
+               веб-приложения.
+               В настоящее время углублённо изучаю TypeScript для повышения надёжности кода, осваиваю Vue.js для
+               построения
+               динамических интерфейсов и Penpot — для прототипирования и сокращения разрыва между дизайном и вёрсткой.
+               Быстро осваиваю новые технологии, внимателен к обратной связи и нацелен на создание стабильных, удобных в
+               поддержке решений.
+            </p>
+         </section>
+
+         <section id="skills" class="skills main__section">
+            <h2 class="skills__title section-title">Навыки</h2>
+            <div class="skills__grid">
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/html5.png" alt="HTML5" />
+                  <p class="skills__name">HTML5</p>
+               </div>
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/CSS3.png" alt="CSS3" />
+                  <p class="skills__name">CSS3</p>
+               </div>
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/JS.png" alt="JavaScript" />
+                  <p class="skills__name">JavaScript</p>
+               </div>
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/git.png" alt="Git" />
+                  <p class="skills__name">Git</p>
+               </div>
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/PSQL.png" alt="PostgreSQL" />
+                  <p class="skills__name">PostgreSQL</p>
+               </div>
+               <div class="skills__item">
+                  <img class="skills__icon" src="/assets/icons/NodeJS.png" alt="Node.js" />
+                  <p class="skills__name">Node.js</p>
+               </div>
+            </div>
+         </section>
+
+         <section id="projects" class="projects main__section">
+            <h2 class="projects__title section-title">Проекты</h2>
+            <div class="projects__grid">
+               <div class="projects__item">
+                  <h3 class="projects__item-title">CV Page</h3>
+                  <a class="projects__link" href="https://github.com/FunnyDevill/CV-Page" target="_blank"
+                     rel="noopener noreferrer">Репозиторий</a>
+                  <p class="projects__desc"> Персональное резюме с видеофоном, адаптивной вёрсткой, микроразметкой
+                     Schema.org и архитектурой по БЭМ. Демонстрирует навыки HTML5, CSS3, JavaScript.
+                  </p>
+               </div>
+               <div class="projects__item">
+                  <h3 class="projects__item-title">Kids-shop</h3>
+                  <a class="projects__link" href="https://github.com/FunnyDevill/kids_shop_v2">Дипломный проект</a>
+                  <p class="projects__desc">Интернет-магазин детских товаров (JavaScript, HTML, CSS) </p>
+               </div>
+               <div class="projects__item">
+                  <h3 class="projects__item-title">SpecSintez</h3>
+                  <a class="projects__link" href="https://github.com/FunnyDevill/SpecSintez">Фриланс проект</a>
+                  <p class="projects__desc">Пробная разработка полноценного сайта с панеью администратора, СУБД.
+                     (Node.js, Express.js 5, PostgreSQL 17, EJS, TinyMCE 8, Docker, Gulp, Mocha/Chai)
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <section id="experience" class="experience main__section" itemscope itemtype="https://schema.org/ItemList">
+            <h2 class="experience__title section-title" itemprop="name">Опыт работы</h2>
+            <div class="experience__list">
+               <div class="experience__item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/OrganizationRole">
+                  <meta itemprop="roleName" content="Продавец-консультант, мастер инноваций" />
+                  <div class="experience__header">
+                     <h3 class="experience__company" itemprop="worksFor" itemscope
+                        itemtype="https://schema.org/Organization">
+                        <span itemprop="name">Технопарк-Центр</span>
+                     </h3>
+                     <span class="experience__period">
+                        <time datetime="2019" itemprop="startDate">2019</time>–<time datetime="2026"
+                           itemprop="endDate">2026</time>
+                     </span>
+                  </div>
+                  <p class="experience__desc" itemprop="description">
+                     Консультирование клиентов по подбору цифровой техники и электроники, внедрение инновационных
+                     подходов в продажи, обучение коллег, участие в развитии розничной сети. Развил навыки глубокого
+                     анализа потребностей клиента и аргументированной презентации сложных технических решений.
+                  </p>
+               </div>
+               <div class="experience__item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/OrganizationRole">
+                  <meta itemprop="roleName" content="Продавец-консультант, администратор ТТ" />
+                  <div class="experience__header">
+                     <h3 class="experience__company" itemprop="worksFor" itemscope
+                        itemtype="https://schema.org/Organization">
+                        <span itemprop="name">Хорошая Связь</span>
+                     </h3>
+                     <span class="experience__period">
+                        <time datetime="2018" itemprop="startDate">2018</time>–<time datetime="2019"
+                           itemprop="endDate">2019</time>
+                     </span>
+                  </div>
+                  <p class="experience__desc" itemprop="description">
+                     Выполнение планов продаж, работа с возражениями, кассовая дисциплина. Достиг повышения до
+                     администратора торговой точки: координировал работу смены, занимался обучением новых сотрудников,
+                     решал операционные задачи, что способствовало росту управленческих компетенций.
+                  </p>
+               </div>
+               <div class="experience__item" itemprop="itemListElement" itemscope
+                  itemtype="https://schema.org/OrganizationRole">
+                  <meta itemprop="roleName" content="Продавец-консультант, руководитель ТТ" />
+                  <div class="experience__header">
+                     <h3 class="experience__company" itemprop="worksFor" itemscope
+                        itemtype="https://schema.org/Organization">
+                        <span itemprop="name">Ноу-Хау</span>
+                     </h3>
+                     <span class="experience__period">
+                        <time datetime="2013" itemprop="startDate">2013</time>–<time datetime="2018"
+                           itemprop="endDate">2018</time>
+                     </span>
+                  </div>
+                  <p class="experience__desc" itemprop="description">
+                     Начал карьеру с позиции продавца-консультанта, за 5 лет вырос до руководителя торговой точки.
+                     Управлял коллективом до 10 человек, отвечал за выполнение KPI, мерчандайзинг, проведение
+                     инвентаризаций. Приобрел опыт планирования, отчётности и эффективной коммуникации в команде.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <section id="education" class="education main__section">
+            <h2 class="education__title section-title">Образование</h2>
+            <div class="education__list">
+               <div class="education__item" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+                  <meta itemprop="programType" content="Среднее профессиональное образование" />
+                  <div class="education__header">
+                     <h3 class="education__institution" itemprop="provider" itemscope
+                        itemtype="https://schema.org/EducationalOrganization">
+                        <span itemprop="name">Хекслет-колледж</span>
+                     </h3>
+                  </div>
+                  <p class="education__specialty" itemprop="name">
+                     Специальность 09.02.07 «Информационные системы и программирование»
+                  </p>
+                  <meta itemprop="educationalCredentialAwarded"
+                     content="Диплом о среднем профессиональном образовании" />
+               </div>
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <footer class="footer" id="contact">
+      <h2 class="footer__title">Связаться со мной</h2>
+      <form class="footer__form contact-form" action="#" method="post">
+         <div aria-hidden="true" style="position:absolute;left:-9999px;">
+            <label for="honeypot">Оставьте это поле пустым</label>
+            <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off" />
+         </div>
+         <div class="contact-form__group">
+            <label class="contact-form__label" for="name">Имя</label>
+            <input class="contact-form__input" type="text" id="name" name="name" placeholder="Алексей" required />
+         </div>
+         <div class="contact-form__group">
+            <label class="contact-form__label" for="phone">Телефон</label>
+            <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="+7 900 000-00-00"
+               required />
+         </div>
+         <div class="contact-form__group">
+            <label class="contact-form__label" for="message">Сообщение</label>
+            <textarea class="contact-form__textarea" id="message" name="message"
+               placeholder="Ваш вопрос или предложение" rows="4" required></textarea>
+         </div>
+         <button class="contact-form__button" type="submit">Отправить</button>
+      </form>
+   </footer>
+</body>
+
+</html>

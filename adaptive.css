@@ -1,0 +1,33 @@
+/* ===== Отключение анимации ===== */
+@media (prefers-reduced-motion: reduce) {
+  .video-bg__media {
+    display: none;
+  }
+  .video-bg {
+    background-image: url('/assets/video/BG_Video_poster.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* ===== Адаптив (базовый) ===== */
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    margin: 0 16px;
+  }
+  .main__aside {
+    position: static;
+    max-height: none;
+    margin-bottom: 32px;
+  }
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+  .header__nav-list {
+    gap: 16px;
+  }
+}
